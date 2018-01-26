@@ -2,7 +2,9 @@ public class HelloWorld
 {
     public static void main (String args[])
     {
-        System.out.println("Hello World");
-        System.out.println("Jake is being annoying");
+        for (int x = 0; x <= 100; x+=2)
+        {
+            System.out.println(x);
+        }
     }
 }
