@@ -5,7 +5,7 @@ public class email
         emailClass myEmail = new emailClass("bcarvalho2500@gmail.com");
         
         System.out.println(myEmail.toString());
-        System.out.println("Hello");
+        System.out.println("Bye");
     }
 }
 
