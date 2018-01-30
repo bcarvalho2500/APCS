@@ -27,5 +27,7 @@ public class TwoDarrays2
                 }
             }
         }
+
+        System.out.println("Largest: " + largest + "     Smallest: " + smallest);
     }
 }
