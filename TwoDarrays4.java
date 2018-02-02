@@ -13,7 +13,6 @@ public class TwoDarrays4
             for (int j = 0; j < a[0].length; j++)
             {
                 total += a[i][j];
-                total2 += a[j][i];
             }
 
             System.out.println((double)total / a[0].length);
