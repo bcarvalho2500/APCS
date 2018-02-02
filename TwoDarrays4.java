@@ -31,7 +31,7 @@ public class TwoDarrays4
             System.out.println((double)total / a[0].length);
             System.out.println((double)total / a.length);
             total = 0;
-            }
+            
         }
     }
 }
