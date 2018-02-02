@@ -20,6 +20,7 @@ public class TwoDarrays4
             total = 0;
         }
         
+        int total2 = 0;
         for (int i = 0; i < a[0].length; i++)
         {
             for (int j = 0; j < a.length; j++)
@@ -27,8 +28,8 @@ public class TwoDarrays4
                 total2 += a[i][j];
             }
 
-            System.out.println((double)total / a[0].length);
-            System.out.println((double)total / a.length);
+            System.out.println((double)total2 / a[0].length);
+            System.out.println((double)total2 / a.length);
             total = 0;
             
         }
