@@ -24,8 +24,21 @@ class matrix
 
     public int[][] multiplyMatrices ()
     {
-        int[][] productMatrix = [matrix1.length][matix2[0].length];
+        int[][] productMatrix = [matrix1.length][matrix2[0].length];
 
-        for (int )
+        for (int i = 0; i < matrix1.length; i++)
+        {
+            for (int j = 0; j < matrix1[0].length; j++)
+            {
+                if (i == 0 && j == 0)
+                {
+                    productMatrix[i][j] = (matrix1[i][j] * matrix2[i][j]);
+                }
+                else
+                {
+                    productMatrix[i][j] = (matrix1[i][j] * matrix2[j][i]);
+                }
+            }
+        }
     }
 }
