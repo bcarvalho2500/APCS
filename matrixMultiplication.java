@@ -30,14 +30,7 @@ class matrix
         {
             for (int j = 0; j < matrix1[0].length; j++)
             {
-                if (i == 0 && j == 0)
-                {
-                    productMatrix[i][j] = (matrix1[i][j] * matrix2[i][j]);
-                }
-                else
-                {
-                    productMatrix[i][j] = (matrix1[i][j] * matrix2[j][i]);
-                }
+                productMatrix[i][j] = (matrix1[i][j] * matrix2[j][i]);  
             }
         }
     }
