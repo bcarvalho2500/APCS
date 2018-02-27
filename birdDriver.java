@@ -2,7 +2,8 @@ public class birdDriver
 {
     public static void main (String args[])
     {
-
+        Owl owl1 = new Owl("Larry", "small", "Katie's House");
+        System.out.println(owl1.toString());
     }
 }
 
@@ -66,6 +67,6 @@ class Owl extends bird
 
     public String toString()
     {
-        return "The " + size + " " + super.toString() + ". It lives in " + location ".";
+        return "The " + size + " " + super.toString() + ". It lives in " + location + ".";
     }
 }
