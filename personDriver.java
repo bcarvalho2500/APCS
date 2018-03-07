@@ -2,6 +2,13 @@ public class personDriver {
 
     public static void main(String[] args) {
         
+        Adult adult1 = new Adult("Mary", 26, 'f', "Teacher", 35000);
+        Child child1 = new Child("George", 7, 'm', "Pine Grove Elementary");
+        Child child2 = new Child("Sue", 17, 'f', "Eastern Technical High");
+
+        System.out.println(adult1.toString());
+        System.out.println(child1.toString());
+        System.out.println(child2.toString());
     }
 }
 
@@ -45,6 +52,6 @@ class Child extends Person {
     }
 
     public String toString() {
-        return (super.toString() + " School " + school);
+        return (super.toString() + " School: " + school);
     }
 }
