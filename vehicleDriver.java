@@ -1,18 +1,29 @@
+import java.util.ArrayList;
+
 public class vehicleDriver
 {
     public static void main(String[] args) {
         
-        Vehicle car1 = new Car("1234",4);
-        Vehicle truck1 = new Truck("1543", 5000);
-        Vehicle farmTruck1 = new FarmTruck("1874", 4000);
+       ArrayList vehicleList = new ArrayList();
 
-        System.out.println("Vin: " + car1.getVin() + " Tax: " + car1.getTax());
-        System.out.println("Vin: " + truck1.getVin() + " Tax: " + truck1.getTax());
-        System.out.println("Vin: " + farmTruck1.getVin() + " Tax: " + farmTruck1.getTax());
+       vehicleList.add(new Car("askfnfeo", 2));
+       vehicleList.add(new FarmTruck("jdnfenowdj", 2100));
+       vehicleList.add(new Truck("aksndioens", 2400));
+
+       for (int i = 0; i < vehicleList.size(); i++) {
+           Vehicle temp = (Vehicle)vehicleList.get(i);
+           System.out.print(temp.getVin());
+           System.out.println("\t" + temp.getTax());
+       }
     }
 }
 
-abstract class Vehicle
+interface Transportation
+{
+    public String getVin();
+    public double getTax();
+}
+abstract class Vehicle implements Transportation
 {
     private String vin;
 
